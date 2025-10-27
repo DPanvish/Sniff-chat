@@ -1,2 +1,3 @@
 1) Install Vite "npm create vite@latest"
 2) Move client directory and inatall React router dom "npm install react-router-dom"
+3) Install Tailwind css by following the official docs "https://tailwindcss.com/docs/installation/using-vite"
