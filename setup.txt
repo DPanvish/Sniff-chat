@@ -1,0 +1,2 @@
+1) Install Vite "npm create vite@latest"
+2) Move client directory and inatall React router dom "npm install react-router-dom"
