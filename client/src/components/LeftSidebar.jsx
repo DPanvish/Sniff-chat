@@ -1,9 +1,14 @@
 import React from 'react'
+import assets from '../util/assets'
 
-const LeftSidebar = () => {
+const LeftSidebar = ({selectedUser, setSelectedUser}) => {
   return (
     <div>
-      <h1>Left Sidebar</h1>
+      <div className="pb-5">
+        <div className="flex justify-between items-center">
+            <img src={assets.logo} />
+        </div>
+      </div>
     </div>
   )
 }
