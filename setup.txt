@@ -10,3 +10,10 @@
 8) Install nodemon "npm install nodemon"
 9) In package.json inside scripts remove test and add "server": "nodemon server.js"
    This allows the server to update live when changes are made in the server code
+10) Create account in cloudinary and create Api in it 
+    add the cloud name, API key, API secret to .env
+    CLOUDINARY_CLOUD_NAME=your_cloud_name
+    CLOUDINARY_API_KEY=your_api_key
+    CLOUDINARY_API_SECRET=your_api_secret
+11) After completing the backend we need to install some packages in frontend
+    "npm install react-hot-toast axios socket.io-client"
