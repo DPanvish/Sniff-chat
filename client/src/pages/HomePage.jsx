@@ -12,9 +12,9 @@ const HomePage = () => {
 				overflow-hidden h-full grid grid-cols-1 relative
 				${selectedUser ? "md:grid-cols-[1fr_1.5fr_1fr] xl:grid-cols-[1fr_2fr_1fr]" : "md:grid-cols-2"}
 				`}>
-        <LeftSidebar />
-        <ChatContainer />
-        <RightSidebar />
+        <LeftSidebar selectedUser={selectedUser} setSelectedUser={setSelectedUser} />
+        <ChatContainer selectedUser={selectedUser} setSelectedUser={setSelectedUser} />
+        <RightSidebar selectedUser={selectedUser} setSelectedUser={setSelectedUser} />
       </div>
     </div>
   )
