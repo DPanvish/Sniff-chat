@@ -1,5 +1,5 @@
 import React from 'react'
-import assets, { userDummyData } from '../util/assets'
+import assets, { userDummyData } from '../lib/assets'
 import { useNavigate } from 'react-router-dom';
 
 const LeftSidebar = ({selectedUser, setSelectedUser}) => {
