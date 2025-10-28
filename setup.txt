@@ -2,3 +2,11 @@
 2) Move client directory and inatall React router dom "npm install react-router-dom"
 3) Install Tailwind css by following the official docs "https://tailwindcss.com/docs/installation/using-vite"
 4) Import the Outfit font from google fonts "@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+5) After Completing the frontend part now create the backend folder server
+   initialize node package manager "npm init -y"
+6) Now install all required packages
+   "npm install bcryptjs cloudinary cors dotenv express jsonwebtoken mongoose socket.io"
+7) In package.json change the type to module
+8) Install nodemon "npm install nodemon"
+9) In package.json inside scripts remove test and add "server": "nodemon server.js"
+   This allows the server to update live when changes are made in the server code
