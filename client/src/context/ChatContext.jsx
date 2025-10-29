@@ -20,7 +20,6 @@ export const ChatProvider = ({children}) => {
             if(data.success){
                 setUsers(data.users);
                 setUnseenMessages(data.unseenMessages);
-
             }
         }catch(err){
             toast.error(err.message);
@@ -67,7 +66,7 @@ export const ChatProvider = ({children}) => {
             }else{
                 setUnseenMessages((previousUnseenMessages) => ({
                     ...previousUnseenMessages,
-                    [newMessage.senderId] : previousUnseenMessages[newMessage.senderId] ? previousUnseenMessages[newMessage.sender] + 1 : 1,
+                    [newMessage.senderId] : previousUnseenMessages[newMessage.senderId] ? previousUnseenMessages[newMessage.senderId] + 1 : 1,
                 }))
             }
         })
@@ -77,6 +76,7 @@ export const ChatProvider = ({children}) => {
     const unsubscribeFromMessages = () => {
         if(socket){
             socket.off("newMessage");
+            setUnseenMessages({});
         }
     }
 
@@ -92,7 +92,7 @@ export const ChatProvider = ({children}) => {
         users,
         selectedUser,
         getUsers,
-        setMessages,
+        getMessages,
         sendMessage,
         setSelectedUser,
         unseenMessages,
