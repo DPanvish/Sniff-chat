@@ -17,3 +17,4 @@
     CLOUDINARY_API_SECRET=your_api_secret
 11) After completing the backend we need to install some packages in frontend
     "npm install react-hot-toast axios socket.io-client"
+12) Add the backend URL to .env file in client folder
